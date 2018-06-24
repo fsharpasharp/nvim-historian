@@ -1,0 +1,97 @@
+*historian.txt* Track registers history
+
+                               We are History~
+
+==============================================================================
+CONTENTS                                       *Historian*  *HistorianPlugin*
+
+     1.  Usage.......................................: |Historian-usage|
+     2.  Options.....................................: |Historian-config|
+     3.  Mappings....................................: |Historian-mappings|
+     4.  License.....................................: |Historian-license|
+     5.  Contributing................................: |Historian-contributing|
+
+==============================================================================
+1. Usage                                                  *Historian-usage*
+
+Historian gives you the command `:Historian`, which can take up to two
+arguments:
+
+:Historian [reg] [N]                                    *:Historian*
+
+                        With no arguments, it shows the history of the
+                        registers you are watching, which are specified by
+                        |g:historian_registers|. One argument, and it shows
+                        the history of the targeted register and an
+                        interactive prompt. Two arguments and it pastes the
+                        corresponding entry.
+
+Example
+
+    This is some sample text
+                 ^
+    `"ay$`
+
+    This is some sample text
+    I wish I could write good quality  
+                                     ^
+    `:Historian a 1`
+
+    This is some sample text
+    I wish I could write good quality sample text
+
+------------------------------------------------------------------------------
+2. Options                                              *Historian-options*
+
+    *g:historian_registers*
+
+    (default: ['+'])
+
+                        Specify the registers to keep track of.
+
+    Example
+>
+        let g:historian_registers = ['+', '"']
+<
+
+    *g:historian_length*
+
+    (default: 10)
+
+                        Set the history length of tracked registers.
+
+------------------------------------------------------------------------------
+3. Mappings                                            *Historian-mappings*
+
+By default no mappings are created, however it is possible to set up custom
+mappings as follows:
+
+Example
+>
+    nnoremap <leader>R :Historian<CR>
+<
+------------------------------------------------------------------------------
+4. License                                              *Historian-license*
+
+MIT License
+
+Copyright (c) 2018 fsharpasharp
+
+------------------------------------------------------------------------------
+5. Contributing                                    *Historian-contributing*
+
+Feel free to contribute at https://github.com/fsharpasharp/nvim-historian
+
+TODO:~
+    
+    1. Write registers history to a file to keep track of register changes
+    across multiple sessions.
+
+    2. Add `:HistorianUpdate` command to refresh registers contents (i.e. check
+    if the system clipboard has changed outside of vim).
+
+    3. Implement menu selection when invoking `:Historian` with one argument
+
+------------------------------------------------------------------------------
+
+vim:tw=78:ts=8:ft=help:et:fdm=marker:fdl=0:norl
