@@ -92,4 +92,6 @@ TODO:~
 
     3. Implement menu selection when invoking `:Historian` with one argument
 
+------------------------------------------------------------------------------
+
 vim:tw=78:ts=8:ft=help:et:fdm=marker:fdl=0:norl
