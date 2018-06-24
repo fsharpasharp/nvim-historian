@@ -5,10 +5,11 @@
 ==============================================================================
 CONTENTS                                       *Historian*  *HistorianPlugin*
 
-     1.  Usage........................................: |Historian-usage|
-     2.  Options......................................: |Historian-config|
-     3.  Mappings.....................................: |Historian-mappings|
-     4.  License......................................: |Historian-license|
+     1.  Usage.......................................: |Historian-usage|
+     2.  Options.....................................: |Historian-config|
+     3.  Mappings....................................: |Historian-mappings|
+     4.  License.....................................: |Historian-license|
+     5.  Contributing................................: |Historian-contributing|
 
 ==============================================================================
 1. Usage                                                *Historian-usage*
@@ -75,6 +76,20 @@ Example
 MIT License
 
 Copyright (c) 2018 fsharpasharp
+
 ------------------------------------------------------------------------------
+5. Contributing
+
+Feel free to contribute at https://github.com/fsharpasharp/nvim-historian
+
+TODO:~
+    
+    1. Write registers history to a file to keep track of register changes
+    across multiple sessions.
+
+    2. Add `:HistorianUpdate` command to refresh registers contents (i.e. check
+    if the system clipboard has changed outside of vim).
+
+    3. Implement menu selection when invoking `:Historian` with one argument
 
 vim:tw=78:ts=8:ft=help:et:fdm=marker:fdl=0:norl
