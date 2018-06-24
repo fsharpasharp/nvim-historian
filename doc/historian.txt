@@ -12,7 +12,7 @@ CONTENTS                                       *Historian*  *HistorianPlugin*
      5.  Contributing................................: |Historian-contributing|
 
 ==============================================================================
-1. Usage                                                *Historian-usage*
+1. Usage                                                  *Historian-usage*
 
 Historian gives you the command `:Historian`, which can take up to two
 arguments:
@@ -61,7 +61,7 @@ Example
                         Set the history length of tracked registers.
 
 ------------------------------------------------------------------------------
-3. Mappings                                             *Historian-mappings*
+3. Mappings                                            *Historian-mappings*
 
 By default no mappings are created, however it is possible to set up custom
 mappings as follows:
@@ -78,7 +78,7 @@ MIT License
 Copyright (c) 2018 fsharpasharp
 
 ------------------------------------------------------------------------------
-5. Contributing
+5. Contributing                                    *Historian-contributing*
 
 Feel free to contribute at https://github.com/fsharpasharp/nvim-historian
 
